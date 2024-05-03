@@ -27,12 +27,12 @@ wss.on('connection', (ws) => {
 })
 
 setInterval(() => {
-    // const totalMem = os.totalmem()
-    // const freeMem = os.freemem()
-    // const usedMem = totalMem - freeMem
-    // const memUsage = (usedMem / totalMem) * 100
-    // console.log('Memory:', memUsage.toFixed(2) + '%')
-    // console.log('CPU:', os.loadavg())
+    const totalMem = os.totalmem()
+    const freeMem = os.freemem()
+    const usedMem = totalMem - freeMem
+    const memUsage = (usedMem / totalMem) * 100
+    console.log('Memory:', memUsage.toFixed(2) + '%')
+    console.log('CPU:', os.loadavg())
 
     const formatMemoryUsage = (data) => `${Math.round((data / 1024 / 1024) * 100) / 100} MB`
 

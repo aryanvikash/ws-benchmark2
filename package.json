@@ -1,0 +1,19 @@
+{
+  "name": "ws-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "io": "artillery run socketio.yml",
+    "ws": "artillery run ws.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "websocket": "^1.0.34",
+    "ws": "^8.17.0"
+  }
+}
